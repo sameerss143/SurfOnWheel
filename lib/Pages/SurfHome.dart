@@ -39,7 +39,12 @@ class _SurfBoardHomeState extends State<SurfBoardHome> {
           Text('Select the surfboard'),
           new DropdownButtonFormField<String>(
               value: _selectedBoard,
-              items: <String>['Hard-Board (SUP)', 'Inflatable-Board (iSUP)']
+              items: <String>[
+                'Short-Board',
+                'Long-Board',
+                'Soft-Board',
+                'Body-Board',
+              ]
                   .map((String e) => DropdownMenuItem(
                         child: Text(e),
                         value: e,
